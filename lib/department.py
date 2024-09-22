@@ -1,4 +1,3 @@
-# lib/department.py
 from __init__ import CURSOR, CONN
 
 
@@ -14,7 +13,7 @@ class Department:
 
     def __repr__(self):
         return f"<Department {self.id}: {self.name}, {self.location}>"
-    
+
     @property
     def name(self):
         return self._name
@@ -40,7 +39,6 @@ class Department:
             raise ValueError(
                 "Location must be a non-empty string"
             )
-
 
     @classmethod
     def create_table(cls):

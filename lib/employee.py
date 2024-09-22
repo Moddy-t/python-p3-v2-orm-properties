@@ -2,7 +2,6 @@
 from __init__ import CURSOR, CONN
 from department import Department
 
-
 class Employee:
 
     # Dictionary of objects saved to the database.
@@ -19,7 +18,6 @@ class Employee:
             f"<Employee {self.id}: {self.name}, {self.job_title}, " +
             f"Department ID: {self.department_id}>"
         )
-    
 
     @property
     def name(self):
@@ -58,7 +56,6 @@ class Employee:
         else:
             raise ValueError(
                 "department_id must reference a department in the database")
-
 
     @classmethod
     def create_table(cls):
